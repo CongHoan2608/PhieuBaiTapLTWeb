@@ -101,3 +101,8 @@
 4. Hai rủi ro bảo mật nếu chỉ validate trên Frontend mà không validate Backend:
     - Dữ liệu độc hại xâm nhập database: Kẻ tấn công có thẻ gửi dữ liệu sai định dạng hoặc mã độc trực tiếp lên server, gây hỏng hệ thống.
     - Sai lệch logic nghiệp vụ: Nếu không validate ở Backend, kẻ xấu có thể thay đổi số tiền chuyển khoản thành số âm hoặc vượt quá sô dư thực tế, gây tổn thất tài chính nghiêm trọng cho ngân hàng.
+
+## Phần B
+### Câu B1: Form Đăng ký Tài khoản
+- HTML không thể validate confirm password vì:
+    - HTML5 chỉ có thể validate dữ liệu của từng ô input độc lập dựa trên các thuộc tính có sẵn. Nó không có khả năng logic để so sáng giá trị giữa 2 ô khác nhau.
